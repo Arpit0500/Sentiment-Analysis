@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Student Registration Form Using Table in HTML</title>
+<style>
+   
+h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: blue;
+ text-align: center; 
+ text-decoration: underline
+}
+table{
+ font-family: verdana; 
+ color:white; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);  
+ border-collapse: collapse; 
+ border: 4px solid #000000;
+ border-style: dashed;
+  
+}
+table.inner{
+ border: 10px
+}
+input[type=text], input[type=email], input[type=number]{
+ width: 50%;
+ padding: 6px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+button,input[type=reset]{
+ width: 15%;
+ padding: 8px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<h2>Student Information</h3>
+<table align="center" cellpadding = "10">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" />
+
+</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName"  />
+
+</td>
+</tr>
+
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="EmailID"/></td>
+</tr>
+
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10"/>
+
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+</td>
+</tr>
+
+
+<tr>
+<td>Address<br /><br /><br /></td>
+<td><textarea name="Address" rows="10" cols="50"></textarea></td>
+</tr>
+
+
+
+<tr>
+<td>Hobbies <br /><br /><br /></td>
+<td>
+<input type="checkbox" name="HobbyDrawing" value="Drawing" />
+Drawing
+<input type="checkbox" name="HobbySinging" value="Singing" />
+Singing
+<input type="checkbox" name="HobbyDancing" value="Dancing" />
+Dancing
+<input type="checkbox" name="HobbyCooking" value="Cooking" />
+Sketching
+<br />
+<input type="checkbox" name="HobbyOther" value="Other">
+Others
+<input type="text" name="Other_Hobby" maxlength="50" placeholder="Ex- Playing Games" />
+
+</td>
+</tr>
+
+
+<tr>
+<td>Select Branch</td>
+<td>
+<input type="radio" name="Branch" value="Computer">
+ Computer Engg. <br>
+<input type="radio" name="Branch" value="Civil">
+Civil Engg.<br>
+<input type="radio" name="Branch" value="E&TC">
+Electronics Engg.<br>
+<input type="radio" name="Branch" value="Electrical Engg.">
+Electrical Engg.<br>
+<input type="radio" name="Branch" value="Mechanical">
+Mechanical Engg.<br>
+<input type="radio" name="Branch" value="Chemical Engg.">
+Chemical Engg. <br>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<button type="submit" value="sumbit">Submit</button>
+<input type="reset" value="Reset"></input>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
